@@ -289,6 +289,9 @@ img.pull-left {
 ::-webkit-input-placeholder {
 	color: #12151B;
 }
+::-webkit-select-placeholder {
+	color: #12151B;
+}
 
 :-moz-placeholder {
 
@@ -312,8 +315,22 @@ img.pull-left {
 
 /* block grids default paddings 
 --------------------------------------------------------------------- */
+
 .bgrid {
 	padding: 0 20px;
+}
+
+.service-list .bgrid {
+	padding: 0 20px;
+	margin-bottom: 40px;
+}
+
+.service-list .bgrid img{
+	height: 90%;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 7%;
+
 }
 
 @media only screen and (max-width:1024px) {
@@ -1255,7 +1272,7 @@ ul#nav li.current a:after {
 	position: absolute;
 	left: 50%;
 	bottom: -27px;
-	margin-left: 250px;
+	margin-left: 130px;
 }
 
 #hero #more a {
@@ -1674,7 +1691,7 @@ ul#nav li.current a:after {
 #services {
 	background: #1a1a1a;
 	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-bottom: 90px;
 	border-bottom: 1px solid #15191d;
 }
 
@@ -1685,6 +1702,8 @@ ul#nav li.current a:after {
 .service-list .bgrid {
 	padding: 0 22px 6px;
 }
+
+
 
 .service-list .bgrid {
 	-moz-transition: all 0.3s ease-in-out;
@@ -1764,7 +1783,7 @@ ul#nav li.current a:after {
 
 #about {
 	background: #1d1d1d;
-	padding-top: 120px;
+	padding-top: 90px;
 	padding-bottom: 120px;
 	border-bottom: 1px solid #15191d;
 }
@@ -1901,6 +1920,8 @@ ul#nav li.current a:after {
 		line-height: 27px;
 	}
 
+
+
 }
 
 @media only screen and (max-width:600px) {
@@ -1932,7 +1953,7 @@ ul#nav li.current a:after {
 /* Call To Action 
 ------------------------------------------------------------------ */
 #call-to-action {
-	margin-top: 30px;
+
 	padding-top: 36px;
 	text-align: center;
 }
@@ -1951,8 +1972,8 @@ ul#nav li.current a:after {
 }
 
 #call-to-action .section-ads {
-	padding-top: 36px;
-	border-top: 1px dotted rgba(150, 150, 150, 0.1);
+
+
 }
 
 #call-to-action h2 {
@@ -2313,9 +2334,17 @@ input[type="password"],
 input[type="email"],
 #contact textarea,
 #contact select {
+    color: black;
 	margin-bottom: 45px;
 	width: 100%;
 }
+
+#contact select {
+    color: #12151b;
+	margin-bottom: 45px;
+	width: 100%;
+}
+
 
 #contact button.submitform {
 	font: 15px/30px "raleway-extrabold", sans-serif;
@@ -2489,9 +2518,10 @@ footer hr {
 }
 
 footer .info {
-	width: 90%;
+	width: 100%;
 	max-width: 600px;
 	margin: 42px auto 36px;
+	margin-bottom: 0px;
 	text-align: center;
 	clear: both;
 }
@@ -2513,7 +2543,7 @@ footer .footer-logo {
 footer .copyright {
 	clear: both;
 	margin: 15px 0;
-	padding: 24px 18px 6px 18px;
+	padding: 0px 18px 6px 18px;
 	font: 14px/24px "raleway-medium", sans-serif;
 	letter-spacing: .5px;
 	text-align: center;
@@ -2638,3 +2668,5 @@ footer .social-links li:first-child {
 	position: relative;
 	right: -5px;
 }
+
+
