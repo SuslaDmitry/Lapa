@@ -25,6 +25,7 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="https://kit.fontawesome.com/f2ba4bbe68.js" crossorigin="anonymous"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
    <!-- favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
@@ -811,8 +812,8 @@
 	               </div>
 
 				   <div>
-					  <select name="entry.1287866031" id="select_service" class="form-control" data-style="btn-white">
-						  <option value="Не выбрано">Тарифний план</option>
+					  <select name="entry.1287866031" id="select_service" class="select form-control" data-style="btn-white">
+						  <option disabled>Тарифный план</option>
 						  <option value="Супер легкий. Цена 1000 грн">Супер легкий. Цена 1000 грн</option>
 						  <option value="Легкий. Цена 2000 грн">Легкий. Цена 2000 грн</option>
 						  <option value="Простой. Цена 4000 грн">Простой. Цена 4000 грн</option>
@@ -824,7 +825,7 @@
 	                 	<textarea name="entry.315838614"  id="contactMessage" placeholder="Комментарий" rows="10" cols="50" required ></textarea>
 	               </div>
 
-					<button class="submitform" type="submit" value="Send">Отправить</button>
+					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz" type="submit" value="Send">Отправить</button>
 
       			</fieldset>
       		</form> <!-- Form End -->
@@ -900,16 +901,18 @@
    </div> 
 
    <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-1.11.3.min.js"></script>
-   <script src="js/jquery-migrate-1.2.1.min.js"></script>
-   <script src="js/jquery.flexslider-min.js"></script>
-   <script src="js/jquery.waypoints.min.js"></script>
-   <script src="js/jquery.validate.min.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/jquery.placeholder.min.js"></script>
-   <script src="js/jquery.magnific-popup.min.js"></script>  
-   <script src="js/main.js"></script>
+   ================================================== -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+
 
 </body>
 

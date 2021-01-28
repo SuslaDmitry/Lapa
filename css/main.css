@@ -2346,6 +2346,11 @@ input[type="email"],
 }
 
 
+
+
+
+
+
 #contact button.submitform {
 	font: 15px/30px "raleway-extrabold", sans-serif;
 	text-transform: uppercase;
@@ -2669,4 +2674,91 @@ footer .social-links li:first-child {
 	right: -5px;
 }
 
+/* NEW SELECT */
 
+.select {
+
+    color: #12151b;
+	margin-bottom: 45px;
+	width: 100%;
+		display: block;
+	padding: 18px 20px;
+	margin: 0 0 12px 0;
+	border: 0;
+	outline: none;
+	vertical-align: middle;
+	color: #12151b;
+	font-family: "raleway-bold", sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	border-radius: 3px;
+	max-width: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+}
+
+.new-select {
+    position: relative;
+    border: 1px solid #12151b;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.new-select__list {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border: 1px solid #12151b;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+    color: #fdc501;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    background: url('path-to-image') no-repeat right center / cover;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
