@@ -794,11 +794,7 @@
       <div class="row">
       	
       	<div id="contact-form" class="six columns tab-whole left">
-  				<script>
-      				function onSubmit(token) {
-       					 document.getElementById("contactForm").submit();
-    				  }
-  				</script>
+  			<script type="text/javascript">var submitted=false;</script>
 			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                             onload="if(submitted)  {window.location='sendru';}"></iframe>
             <!-- form -->
@@ -830,7 +826,7 @@
 	                 	<textarea name="entry.315838614"  id="contactMessage" placeholder="Комментарий" rows="10" cols="50" required ></textarea>
 	               </div>
 
-					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz" data-callback='onSubmit'>Отправить</button>
+					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz" data-callback='submit'>Отправить</button>
 
       			</fieldset>
       		</form> <!-- Form End -->
