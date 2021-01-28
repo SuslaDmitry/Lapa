@@ -26,7 +26,12 @@
 	<script src="js/modernizr.js"></script>
 	<script src="https://kit.fontawesome.com/f2ba4bbe68.js" crossorigin="anonymous"></script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+	<script>
+      function onSubmit(token) {
+        document.getElementById("contactForm").submit();
+        if(submitted)  {window.location='sendru';}
+      }
+    </script>
    <!-- favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
@@ -826,7 +831,7 @@
 	                 	<textarea name="entry.315838614"  id="contactMessage" placeholder="Комментарий" rows="10" cols="50" required ></textarea>
 	               </div>
 
-					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz" data-callback='submit'>Отправить</button>
+					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz" data-callback='onSubmit'>Отправить</button>
 
       			</fieldset>
       		</form> <!-- Form End -->
