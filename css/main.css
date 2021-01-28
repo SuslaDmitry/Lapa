@@ -2335,15 +2335,11 @@ input[type="email"],
 #contact textarea,
 #contact select {
     color: black;
-	margin-bottom: 45px;
+	margin-bottom: 25px;
 	width: 100%;
 }
 
-#contact select {
-    color: #12151b;
-	margin-bottom: 45px;
-	width: 100%;
-}
+
 
 
 
@@ -2684,6 +2680,7 @@ footer .social-links li:first-child {
 		display: block;
 	padding: 18px 20px;
 	margin: 0 0 12px 0;
+	margin-bottom: 25px;
 	border: 0;
 	outline: none;
 	vertical-align: middle;
@@ -2700,25 +2697,23 @@ footer .social-links li:first-child {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 
+
 }
 
 .new-select {
     position: relative;
-    border: 1px solid #12151b;
-    padding: 10px 15px;
     cursor: pointer;
     user-select: none;
 }
 
 .new-select__list {
     position: absolute;
-    top: 0px;
+    top: 9px;
     left: 0;
-    border: 1px solid #12151b;
     cursor: pointer;
     width: 100%;
     z-index: 2;
-    background: #fff;
+
     user-select: none;
 }
 

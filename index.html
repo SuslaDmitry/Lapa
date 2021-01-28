@@ -25,7 +25,7 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="https://kit.fontawesome.com/f2ba4bbe68.js" crossorigin="anonymous"></script>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
    <!-- favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
@@ -814,10 +814,10 @@
 				   <div>
 					  <select name="entry.1287866031" id="select_service" class="select form-control" data-style="btn-white">
 						  <option disabled>Тарифный план</option>
-						  <option value="Супер легкий. Цена 1000 грн">Супер легкий. Цена 1000 грн</option>
-						  <option value="Легкий. Цена 2000 грн">Легкий. Цена 2000 грн</option>
-						  <option value="Простой. Цена 4000 грн">Простой. Цена 4000 грн</option>
-						  <option value="Расширенный. Цена 6000 грн">Расширенный. Цена 6000 грн</option>
+						  <option value="Супер легкий. Цена 1000 грн">• Супер легкий. Цена 1000 грн</option>
+						  <option value="Легкий. Цена 2000 грн">• Легкий. Цена 2000 грн</option>
+						  <option value="Простой. Цена 4000 грн">• Простой. Цена 4000 грн</option>
+						  <option value="Расширенный. Цена 6000 грн">• Расширенный. Цена 6000 грн</option>
 					  </select>
 				   </div>
 
@@ -825,7 +825,8 @@
 	                 	<textarea name="entry.315838614"  id="contactMessage" placeholder="Комментарий" rows="10" cols="50" required ></textarea>
 	               </div>
 
-					<button class="g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz" type="submit" value="Send">Отправить</button>
+					<button class="submitform g-recaptcha" data-sitekey="reCAPTCHA_site_key"
+        					data-callback='onSubmit' data-action='submit' type="submit" value="Send">Отправить</button>
 
       			</fieldset>
       		</form> <!-- Form End -->
