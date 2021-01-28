@@ -829,9 +829,12 @@
                   <div>
 	                 	<textarea name="entry.315838614"  id="contactMessage" placeholder="Комментарий" rows="10" cols="50" required ></textarea>
 	               </div>
-
-					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz"
-        					data-callback='onSubmit' data-action='submit' value="Send">Отправить</button>
+					<div class="g-recaptcha"
+						  data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz"
+						  data-callback="onSubmit"
+						  data-size="invisible">
+					</div>
+					<button class="submitform" type='submit' value="Send">Отправить</button>
 
 
 					 <script>
