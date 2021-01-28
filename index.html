@@ -826,8 +826,14 @@
 	               </div>
 
 					<button class="submitform g-recaptcha" data-sitekey="6LeTwT8aAAAAAL_RH4Y6cCXeu579Sjeue0oh3MCz"
-        					data-callback='onSubmit' data-action='submit' type="submit" value="Send">Отправить</button>
+        					data-callback='onSubmit' data-action='submit' value="Send">Отправить</button>
 
+
+					 <script>
+   						function onSubmit(token) {
+    						 document.getElementById("demo-form").submit();
+  						 }
+ 					</script>
       			</fieldset>
       		</form> <!-- Form End -->
 
