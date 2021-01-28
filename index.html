@@ -25,7 +25,12 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="https://kit.fontawesome.com/f2ba4bbe68.js" crossorigin="anonymous"></script>
-	<script src="https://www.google.com/recaptcha/api.js"></script>
+	     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("demo-form").submit();
+       }
+     </script>
    <!-- favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
