@@ -26,11 +26,7 @@
 	<script src="js/modernizr.js"></script>
 	<script src="https://kit.fontawesome.com/f2ba4bbe68.js" crossorigin="anonymous"></script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script>
-      function onSubmit(token) {
-        document.getElementById("contactForm").submit();
-      }
-    </script>
+
    <!-- favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
@@ -798,7 +794,11 @@
       <div class="row">
       	
       	<div id="contact-form" class="six columns tab-whole left">
-  			<script type="text/javascript">var submitted=false;</script>
+  				<script>
+      				function onSubmit(token) {
+       					 document.getElementById("contactForm").submit();
+    				  }
+  				</script>
 			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
                             onload="if(submitted)  {window.location='sendru';}"></iframe>
             <!-- form -->
