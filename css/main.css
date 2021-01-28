@@ -2339,13 +2339,7 @@ input[type="email"],
 	width: 100%;
 }
 
-
-
-
-
-
-
-
+.grecaptcha-badge {visibility: hidden;}
 
 #contact button.submitform {
 	font: 15px/30px "raleway-extrabold", sans-serif;
